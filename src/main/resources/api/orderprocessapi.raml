@@ -1,0 +1,47 @@
+#%RAML 1.0
+title: orderProcessapi
+
+
+
+/ordercreate:
+  post:
+    body:
+      application/xml:
+        example: !include request.xml
+         
+    responses:
+      200:
+        body:
+          application/xml:
+            example:
+              <orderresponse>
+              <sfdcid>
+              12345</sfdcid>
+              </orderresponse>
+/orderquery:
+  get:
+    queryParameters:
+      sfdcorderid:
+       type: string
+       required: true
+    responses:
+      200:
+        body:
+          application/xml:
+            example: !include request.xml
+/orderdelete/{sfdcorderid}:
+  
+     delete:
+       responses:
+        200:
+          body:
+            application/xml:
+              example:
+                <order>
+                 <sfdcid>order deleted successfully</sfdcid>
+                </order>
+            
+      
+                
+            
+      

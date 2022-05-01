@@ -1,0 +1,18 @@
+<orders>
+            <ordername>praveen</ordername>
+            <quantity>2</quantity>
+            <shippingaddress>
+                 <shippingcity>Vijayawada</shippingcity>
+                 <shippingstate>andhra pradesh</shippingstate>
+                 <shippingpincode>520003</shippingpincode>
+            </shippingaddress>
+            <pickupaddress>
+                <pickupcity>Hyderabad</pickupcity>
+                <pickupstate>Telangana</pickupstate>
+                <pickuppincode>500067</pickuppincode>
+            </pickupaddress>   
+            <contactdetails>
+                <contactname>praveen </contactname>
+                <contactph>9542271441</contactph>
+            </contactdetails>
+         </orders>
